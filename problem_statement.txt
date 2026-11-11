@@ -1,0 +1,46 @@
+You are tasked with creating a Python application to test the eligibility of students for college admission based on their demographic details, 12th-grade marks, and qualification exams. The application should use the following libraries: numpy, pandas, fastapi, re (regular expressions), and pyodbc etc. The application should:
+Accept the student's name, age, gender, 12th-grade marks (6 subjects), qualification exam results, and desired course as input in JSON format.
+Validate the input using regular expressions (re):
+Name should only contain letters and spaces.
+Age should be between 17 and 25.
+Gender should be one of "Male", "Female", or "Other".
+Marks should be between 0 and 100.
+Desired course should be one of the predefined courses.
+Check if the student is eligible for the desired course based on predefined criteria:
+Engineering: Must have qualified JEE and have the required subject combination in 12th for different branches.
+Computer Science Engineering: Physics, Chemistry, Mathematics. Cut-off marks: 75%
+Mechanical Engineering: Physics, Chemistry, Mathematics. Cut-off marks: 70%
+Electrical Engineering: Physics, Chemistry, Mathematics. Cut-off marks: 70%
+Civil Engineering: Physics, Chemistry, Mathematics. Cut-off marks: 65%
+Electronics and Communication Engineering: Physics, Chemistry, Mathematics. Cut-off marks: 70%
+Medicine: Must have qualified NEET and have the required subjects in 12th grade.
+MBBS: Physics, Chemistry, Biology. Cut-off marks: 85%
+BDS (Dentistry): Physics, Chemistry, Biology. Cut-off marks: 80%
+BAMS (Ayurveda): Physics, Chemistry, Biology. Cut-off marks: 75%
+BHMS (Homeopathy): Physics, Chemistry, Biology. Cut-off marks: 75%
+BPT (Physiotherapy): Physics, Chemistry, Biology. Cut-off marks: 70%
+Commerce: Must have studied commerce subjects in 12th grade.
+B.Com (Bachelor of Commerce): Accountancy, Business Studies, Economics.
+BBA (Bachelor of Business Administration): Accountancy, Business Studies, Economics.
+BBM (Bachelor of Business Management): Accountancy, Business Studies, Economics.
+CA (Chartered Accountancy): Accountancy, Business Studies, Economics.
+Humanities: Must have studied specific subjects in 12th grade.
+BA in History: History, Political Science, Geography.
+BA in Psychology: Psychology, Sociology, English.
+BA in Sociology: Sociology, Political Science, History.
+BA in Political Science: Political Science, History, Geography.
+BA in English: English, History, Political Science.
+If the student is not eligible, recommend similar courses they are eligible for (Use own discretion).
+Store the input and output in a SQL Server database using pyodbc.
+Log the input and output details.
+Ensure that both the input and output are in JSON format.
+Requirements:
+Use numpy and pandas for any necessary data manipulation.
+Use fastapi to create an API endpoint for checking eligibility.
+Use re to validate the input format.
+Use pyodbc to connect to a SQL Server database and store the data.
+You are free to use other libraries as required
+Task:
+Write the Python code to implement this application. Ensure that the code is well-documented and follows best practices. The input and output should be in JSON format. The API should be able to handle multiple calls at the same time.
+ 
+Note – All exceptions should be gracefully handled.

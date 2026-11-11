@@ -1,0 +1,6 @@
+fastapi>=0.100
+uvicorn>=0.23
+numpy>=1.23
+pandas>=1.5
+pyodbc>=4.0.39
+python-dotenv>=1.0
